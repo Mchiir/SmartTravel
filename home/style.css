@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+img:hover {
+    opacity: 0.5;
+  }
+
+  .container{
+    height: 100vh;
+    width: 100%;
+  }
+
+  .images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .images div img{
+    width: 30%;
+  }
+
+  .container h1{
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+	.images {
+        grid-template-columns: 1fr;
+	}
+
+	.images > div{
+
+        width: 100%;
+	}
+}

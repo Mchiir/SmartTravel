@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5cm;
+}
+
+body div div{
+    display: block;
+}
+
+body div div p{
+    font-size: 20px;
+    font-family: 'poppins',sans-serif;
+}
+
+body div div:first-child{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: inline-block;
+}
+
+body div div:first-child input[type="text"]{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(0,0,0, 0.4);
+    padding: 10px;
+    font-size: 15px;
+}
+body div div:last-child{
+    background-color: rgba(0,0,0, 0.8);
+    box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    display: inline-block;
+}
+body div div:last-child input[type="text"]{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(250,250, 250, 0.6);
+    padding: 10px;
+    background-color: rgba(0,0,0, 0);
+    color: white;
+    font-size: 15px;
+}
+
+body div div:last-child button{
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    color: black;
+    border-radius: 30px;
+}
+
+body div div:last-child button a{
+   text-decoration: none;
+   color: black;
+}
+
+body div div:first-child div:last-child input{
+ color: rgba(0,0,0, 1);
+ border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+body div div:first-child div:last-child{
+    background-color: white;
+    box-shadow: 0 0 0px;
+ color: rgba(0,0,0, 0.6);
+}
+
+@media (max-width: 400px){
+    body div{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        box-sizing: content-box;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 700px){
+    body div{
+        grid-template-columns: 1fr;
+    }
+}
